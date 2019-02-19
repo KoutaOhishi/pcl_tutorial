@@ -137,6 +137,8 @@ include_directories(
 # add_executable(${PROJECT_NAME}_node src/pcl_tutorial_node.cpp)
 add_executable(example src/example.cpp)
 target_link_libraries(example ${catkin_LIBRARIES})
+add_executable(downSampling src/downSampling.cpp)
+target_link_libraries(downSampling ${catkin_LIBRARIES})
 
 
 ## Rename C++ executable without prefix
