@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 2.8.3)
 project(pcl_tutorial)
 
 ## Compile as C++11, supported in ROS Kinetic and newer
-# add_compile_options(-std=c++11)
+add_compile_options(-std=c++11)
 
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
@@ -141,6 +141,8 @@ add_executable(downSampling src/downSampling.cpp)
 target_link_libraries(downSampling ${catkin_LIBRARIES})
 add_executable(planeDetection src/planeDetection.cpp)
 target_link_libraries(planeDetection ${catkin_LIBRARIES})
+add_executable(pcl_publisher src/pcl_publisher.cpp)
+target_link_libraries(pcl_publisher ${catkin_LIBRARIES})
 
 
 ## Rename C++ executable without prefix
